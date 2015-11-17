@@ -9,6 +9,11 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
+  "keywords": [
+    "clock",
+    "time",
+    "momentjs"
+  ],
   "dependencies": {
     "moment": "2.10.6",
     "atom-space-pen-views": "^2.0.3"
