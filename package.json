@@ -1,7 +1,7 @@
 {
   "name": "atom-clock",
   "main": "./lib/atom-clock",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Display a clock in the status bar.",
   "keywords": [],
   "repository": "https://github.com/b3by/atom-clock",
