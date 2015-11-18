@@ -1,4 +1,4 @@
-# atom-clock
+# atom-clock [![Build Status](https://travis-ci.org/b3by/atom-clock.svg)](https://travis-ci.org/b3by/atom-clock)
 
 View in [atom.io](https://atom.io/packages/atom-clock).
 
