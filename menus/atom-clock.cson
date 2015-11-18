@@ -1,0 +1,14 @@
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'atom-clock'
+      'submenu': [
+        {
+          'label': 'Toggle clock in status bar'
+          'command': 'atom-clock:toggle'
+        }
+      ]
+    ]
+  }
+]

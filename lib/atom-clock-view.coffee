@@ -1,4 +1,5 @@
 {View} = require 'atom-space-pen-views'
+{CompositeDisposable} = require 'atom'
 
 moment = require 'moment'
 
@@ -11,28 +12,32 @@ class AtomClockView extends View
   refreshInterval: 0
 
   runner: null
+  statusBar: null
 
-  @content: ->
+  @content: () ->
     @div class: 'inline-block atom-clock', =>
       @span outlet: 'clockIndicator'
 
-  initialize: (serializedState) ->
+  initialize: () ->
     @setConfigValues()
     @setDate()
     @setIcon @showIncon
     @startTicker()
 
-    atom.config.onDidChange 'atom-clock.dateFormat', (event) =>
+    @subscriptions = new CompositeDisposable
+
+    @subscriptions.add atom.commands.add 'atom-workspace', 'atom-clock:toggle': =>
+      @toggle()
+
+    @subscriptions.add atom.config.onDidChange 'atom-clock.dateFormat', (event) =>
       @refreshTicker()
 
-    atom.config.onDidChange 'atom-clock.refreshInterval', (event) =>
+    @subscriptions.add atom.config.onDidChange 'atom-clock.refreshInterval', (event) =>
       @refreshTicker()
 
-    atom.config.onDidChange 'atom-clock.showClockIcon', (event) =>
+    @subscriptions.add atom.config.onDidChange 'atom-clock.showClockIcon', (event) =>
       @setConfigValues()
       @setIcon @showIncon
-
-  serialize: ->
 
   setConfigValues: ->
     @dateFormat = atom.config.get 'atom-clock.dateFormat'
@@ -61,9 +66,16 @@ class AtomClockView extends View
     else
       @clockIndicator.removeClass 'icon icon-clock'
 
-  attach: (statusBar) ->
-    statusBar.addRightTile item:this, priority: -1
+  setStatusBar: (statusBar) ->
+    @statusBar = statusBar
+
+  attach: () ->
+    @statusBar.addRightTile item:this, priority: -1
+
+  toggle: ->
+    if @hasParent() then @detach() else @attach()
 
   destroy: =>
     @clearTicker()
+    @subscriptions.dispose()
     this.remove()

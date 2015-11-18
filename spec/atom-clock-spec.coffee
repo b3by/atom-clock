@@ -1,38 +1,53 @@
 AtomClock = require '../lib/atom-clock'
-
-# Use the command `window:run-package-specs` (cmd-alt-ctrl-p) to run specs.
-#
-# To run a specific `it` or `describe` block add an `f` to the front (e.g. `fit`
-# or `fdescribe`). Remove the `f` to unfocus the block.
+{$} = require 'atom-space-pen-views'
 
 describe 'AtomClock', ->
-  [workspaceElement, activationPromise] = []
+
+  [workspaceElement, activationPromise, statusBarPromise] = []
 
   beforeEach ->
-    workspaceElement = atom.views.getView(atom.workspace)
-    activationPromise = atom.packages.activatePackage('atom-clock')
+    workspaceElement = atom.views.getView atom.workspace
+    activationPromise = atom.packages.activatePackage 'atom-clock'
+    statusBarPromise = atom.packages.activatePackage 'status-bar'
 
-  describe 'when the atom-clock:toggle event is triggered', ->
+  afterEach: ->
+    workspaceElement = null
+    activationPromise = null
+    statusBarPromise = null
 
-    it 'has all the required configurations', ->
-      expect(atom.config.get('atom-clock.dateFormat')).toEqual 'H:mm'
-      expect(atom.config.get('atom-clock.refreshInterval')).toEqual 60
-      expect(atom.config.get('atom-clock.showClockIcon')).toEqual false
+  describe 'when the package is activated', ->
 
-    it 'shows the clock when the package is activated', ->
-      # Before the activation event the view is not on the DOM, and no panel
-      # has been created
+    it 'should show the clock', ->
+      jasmine.attachToDOM workspaceElement
+
       expect(workspaceElement.querySelector('.atom-clock')).not.toExist()
 
-      # This is an activation event, triggering it will cause the package to be
-      # activated.
-      # atom.commands.dispatch workspaceElement, 'atom-clock:toggle'
-      #
       waitsForPromise ->
         activationPromise
 
-      runs ->
-        expect(workspaceElement.querySelector('.atom-clock')).toExist()
+      waitsForPromise ->
+        statusBarPromise
 
-        atomClockElement = workspaceElement.querySelector '.atom-clock'
-        expect(atomClockElement).toExist()
+      runs ->
+        expect(atom.packages.isPackageActive('atom-clock')).toBe true
+        clockElement = workspaceElement.querySelector '.atom-clock'
+        expect(clockElement).toExist()
+
+    it 'should trigger the clock with firing the toggle command', ->
+      jasmine.attachToDOM workspaceElement
+
+      waitsForPromise ->
+        activationPromise
+
+      waitsForPromise ->
+        statusBarPromise
+
+      runs ->
+        atom.commands.dispatch workspaceElement, 'atom-clock:toggle'
+        clockElement = workspaceElement.querySelector '.atom-clock'
+        expect(clockElement).not.toExist()
+
+    it 'should fetche the package icon in the status bar', ->
+      expect(atom.config.get('atom-clock.dateFormat')).toEqual 'H:mm'
+      expect(atom.config.get('atom-clock.refreshInterval')).toEqual 60
+      expect(atom.config.get('atom-clock.showClockIcon')).toEqual false

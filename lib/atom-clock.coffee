@@ -22,14 +22,12 @@ module.exports = AtomClock =
       description: 'Show clock icon in the status bar?'
       default: false
 
-  activate: (state) ->
-    @atomClockView = new AtomClockView state.atomClockViewState
+  activate: () ->
 
   deactivate: ->
-    @atomClockView.destroy()
+    @atomClockView?.destroy()
 
   consumeStatusBar: (statusBar) ->
-    @atomClockView.attach statusBar
-
-  serialize: ->
-    atomClockViewState: @atomClockView.serialize()
+    @atomClockView = new AtomClockView()
+    @atomClockView.setStatusBar statusBar
+    @atomClockView.attach()

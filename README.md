@@ -13,17 +13,34 @@ updates (defaulted to 60)
 * Show icon: it specifies whether to show or not the icon (defaulted to `false`)
 
 ### Format examples
+
+#### Default
 The default format is 24 hours, with no icon and no seconds. It will produce a
 time like this:
 
 ![Default format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/default.png?raw=true)
 
-In case you prefer the 12 hours format, it's enough to change the format to
-`H:mm a` in order to get this:
+#### AM/PM
+
+If you prefer the 12 hours format, a configuration like `h:mm a` will produce
+a clock like this:
 
 ![AM/PM format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/ampm.png?raw=true)
 
-If you don't really care about your status bar and are a bit of a time maniac,
-you can use a format like this `MMMM Do, dddd, h:mm:ss a` and get this:
+#### Short date format
+A more complex time format that also include the date could be `DD/MM/YYYY, H:mm`
+where the result is:
 
-![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/wasteOfSpace.png?raw=true)
+![Short format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/short.png?raw=true)
+
+#### Long date format
+For a long time format, you can use a configuration like this
+`MMMM Do, dddd, h:mm:ss a` and get this:
+
+![Long format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/long.png?raw=true)
+
+#### Waste of space
+If you are a bit of a psychopath and you really care about the time, you can use
+a format like `\Q\u\a\r\t\e\r Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
+
+![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)
