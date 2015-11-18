@@ -20,8 +20,6 @@ describe 'AtomClock', ->
     it 'should show the clock', ->
       jasmine.attachToDOM workspaceElement
 
-      expect(workspaceElement.querySelector('.atom-clock')).not.toExist()
-
       waitsForPromise ->
         activationPromise
 
