@@ -1,4 +1,4 @@
-## 0.0.2 - Specs and Travis integration
+## 0.0.3 - Specs and Travis integration
 * New specs for the package
 * Travis integration
 * Clock toggle in the package menu
