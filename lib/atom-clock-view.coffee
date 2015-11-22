@@ -49,7 +49,7 @@ class AtomClockView extends View
                 @refreshInterval - (Date.now() % @refreshInterval)
 
   clearTicker: ->
-    if @tick then clearTimeout(@tick); @tick = null
+    clearTimeout(@tick) unless not @tick
 
   refreshTicker: =>
     @setConfigValues()
