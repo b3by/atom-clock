@@ -1,4 +1,8 @@
-# atom-clock [![Build Status](https://travis-ci.org/b3by/atom-clock.svg)](https://travis-ci.org/b3by/atom-clock)
+# atom-clock
+[![Build Status](https://img.shields.io/travis/b3by/atom-clock.svg?style=flat-square)](https://travis-ci.org/b3by/atom-clock)
+[![Plugin installs!](https://img.shields.io/apm/dm/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
+[![Package version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
+[![Dependencies!](https://img.shields.io/david/b3by/atom-clock.svg?style=flat-square)](https://david-dm.org/b3by/atom-clock)
 
 View in [atom.io](https://atom.io/packages/atom-clock).
 
