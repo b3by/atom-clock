@@ -8,7 +8,7 @@ module.exports = AtomClock =
     dateFormat:
       type: 'string'
       title: 'Time format'
-      description: 'Specify the time format. Please take a look ad http://momentjs.com/docs/#/parsing/string-format/ to check all the available formats.'
+      description: 'Specify the time format. Please take a look ad http://momentjs.com/docs/#/displaying/format/ to check all the available formats.'
       default: 'H:mm'
     refreshInterval:
       type: 'integer'
