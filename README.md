@@ -46,6 +46,6 @@ For a long time format, you can use a configuration like this
 
 #### Waste of space
 If you are a bit of a psychopath and you really care about the time, you can use
-a format like `\Q\u\a\r\t\e\r Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
+a format like `[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
 
 ![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)
