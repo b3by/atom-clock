@@ -1,3 +1,7 @@
+## 0.0.5 - New tick mechanism
+* New ticking mechanism adopted, preventing atom-clock to be behind the wall clock
+(see [pull request](https://github.com/b3by/atom-clock/pull/4))
+
 ## 0.0.4 - Specs and Travis integration
 * New specs for the package
 * Travis integration

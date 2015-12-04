@@ -11,8 +11,8 @@ class AtomClockView extends View
   showIncon: false
   refreshInterval: 0
 
-  runner: null
   statusBar: null
+  tick:      null
 
   @content: () ->
     @div class: 'inline-block atom-clock', =>
@@ -46,10 +46,11 @@ class AtomClockView extends View
 
   startTicker: ->
     @setDate()
-    @runner = setInterval @setDate, @refreshInterval
+    nextTick = @refreshInterval - (Date.now() % @refreshInterval)
+    @tick = setTimeout (=> @startTicker()), nextTick
 
   clearTicker: ->
-    clearInterval(@runner) unless not @runner
+    clearTimeout(@tick) unless not @tick
 
   refreshTicker: =>
     @setConfigValues()
