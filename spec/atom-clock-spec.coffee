@@ -49,3 +49,12 @@ describe 'AtomClock', ->
       expect(atom.config.get('atom-clock.dateFormat')).toEqual 'H:mm'
       expect(atom.config.get('atom-clock.refreshInterval')).toEqual 60
       expect(atom.config.get('atom-clock.showClockIcon')).toEqual false
+
+    it 'should properly call watcher methods for configuration', ->
+      mainPkg = (atom.packages.getActivePackage 'atom-clock').mainModule
+
+      spyOn mainPkg.atomClockView, 'refreshTicker'
+      # console.log mainPkg.atomClockView.refreshTicker()
+
+      atom.config.set 'atom-clock.refreshInterval', 10
+      expect(mainPkg.atomClockView.refreshTicker).toHaveBeenCalled()
