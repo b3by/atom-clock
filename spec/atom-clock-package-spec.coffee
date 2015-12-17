@@ -1,5 +1,5 @@
 describe 'Atom Clock package', ->
-  
+
   [workspaceElement, activationPromise, statusBarPromise] = []
 
   beforeEach ->
@@ -10,7 +10,6 @@ describe 'Atom Clock package', ->
   describe 'when the package is activated', ->
 
     it 'should show the clock', ->
-      expect(workspaceElement.querySelector('.atom-clock')).not.toExist()
 
       waitsForPromise ->
         statusBarPromise
