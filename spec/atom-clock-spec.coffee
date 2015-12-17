@@ -1,60 +1,49 @@
-AtomClock = require '../lib/atom-clock'
-{$} = require 'atom-space-pen-views'
+AtomClockView = require '../lib/atom-clock-view'
 
-describe 'AtomClock', ->
+describe 'Atom Clock', ->
 
-  [workspaceElement, activationPromise, statusBarPromise] = []
+  clock = null
 
   beforeEach ->
-    workspaceElement = atom.views.getView atom.workspace
-    activationPromise = atom.packages.activatePackage 'atom-clock'
-    statusBarPromise = atom.packages.activatePackage 'status-bar'
+    clock = new AtomClockView()
 
-  afterEach: ->
-    workspaceElement = null
-    activationPromise = null
-    statusBarPromise = null
+  afterEach ->
+    clock.destroy()
+    clock = null
 
-  describe 'when the package is activated', ->
+  it 'should have all the required methods', ->
+    expect(typeof clock.setConfigValues).toBe 'function'
+    expect(typeof clock.startTicker).toBe 'function'
+    expect(typeof clock.clearTicker).toBe 'function'
+    expect(typeof clock.refreshTicker).toBe 'function'
+    expect(typeof clock.setDate).toBe 'function'
+    expect(typeof clock.setIcon).toBe 'function'
+    expect(typeof clock.setStatusBar).toBe 'function'
+    expect(typeof clock.attach).toBe 'function'
+    expect(typeof clock.toggle).toBe 'function'
 
-    it 'should show the clock', ->
-      jasmine.attachToDOM workspaceElement
+  it 'should refresh the ticker when the date format is changed', ->
+    spyOn clock, 'refreshTicker'
 
-      waitsForPromise ->
-        activationPromise
+    atom.config.set 'atom-clock.dateFormat', 'H'
+    expect(clock.refreshTicker).toHaveBeenCalled()
 
-      waitsForPromise ->
-        statusBarPromise
+  it 'should refresh the ticker when the interval is changed', ->
+    spyOn clock, 'refreshTicker'
 
-      runs ->
-        expect(atom.packages.isPackageActive('atom-clock')).toBe true
-        clockElement = workspaceElement.querySelector '.atom-clock'
-        expect(clockElement).toExist()
+    atom.config.set 'atom-clock.refreshInterval', '20'
+    expect(clock.refreshTicker).toHaveBeenCalled()
 
-    it 'should trigger the clock with firing the toggle command', ->
-      jasmine.attachToDOM workspaceElement
+  it 'should set the configuration values when clock icon is requested', ->
+    spyOn clock, 'setConfigValues'
 
-      waitsForPromise ->
-        activationPromise
+    atom.config.set 'atom-clock.showClockIcon', true
+    expect(clock.setConfigValues).toHaveBeenCalled()
 
-      waitsForPromise ->
-        statusBarPromise
+  it 'should clear the ticker and restart it when refresh is called', ->
+    spyOn clock, 'clearTicker'
+    spyOn clock, 'startTicker'
 
-      runs ->
-        atom.commands.dispatch workspaceElement, 'atom-clock:toggle'
-        clockElement = workspaceElement.querySelector '.atom-clock'
-        expect(clockElement).not.toExist()
-
-    it 'should fetche the package icon in the status bar', ->
-      expect(atom.config.get('atom-clock.dateFormat')).toEqual 'H:mm'
-      expect(atom.config.get('atom-clock.refreshInterval')).toEqual 60
-      expect(atom.config.get('atom-clock.showClockIcon')).toEqual false
-
-    it 'should properly call watcher methods for configuration', ->
-      mainPkg = (atom.packages.getActivePackage 'atom-clock').mainModule
-
-      spyOn mainPkg.atomClockView, 'refreshTicker'
-      # console.log mainPkg.atomClockView.refreshTicker()
-
-      atom.config.set 'atom-clock.refreshInterval', 10
-      expect(mainPkg.atomClockView.refreshTicker).toHaveBeenCalled()
+    atom.config.set 'atom-clock.refreshInterval', '20'
+    expect(clock.clearTicker).toHaveBeenCalled()
+    expect(clock.startTicker).toHaveBeenCalled()
