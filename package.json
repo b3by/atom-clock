@@ -14,7 +14,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "moment": "^2.11.x",
+    "moment": "^2.11.2",
     "atom-space-pen-views": "^2.1.x"
   },
   "consumedServices": {
