@@ -1,5 +1,3 @@
-AtomClockView = require './atom-clock-view'
-
 module.exports = AtomClock =
 
   atomClockView: null
@@ -28,6 +26,7 @@ module.exports = AtomClock =
     @atomClockView?.destroy()
 
   consumeStatusBar: (statusBar) ->
+    AtomClockView = require './atom-clock-view'
     @atomClockView = new AtomClockView()
     @atomClockView.setStatusBar statusBar
     @atomClockView.attach()

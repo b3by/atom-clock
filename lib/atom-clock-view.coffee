@@ -1,8 +1,6 @@
 {View} = require 'atom-space-pen-views'
 {CompositeDisposable} = require 'atom'
 
-moment = require 'moment'
-
 module.exports =
 class AtomClockView extends View
 
@@ -10,6 +8,7 @@ class AtomClockView extends View
   dateFormat: null
   showIncon: false
   refreshInterval: 0
+  moment: null
 
   statusBar: null
   tick:      null
@@ -58,7 +57,8 @@ class AtomClockView extends View
     @startTicker()
 
   setDate: =>
-    @date = moment().format @dateFormat
+    @moment ?= (require 'moment')()
+    @date = @moment.format @dateFormat
     @clockIndicator.text @date
 
   setIcon: (toSet) ->

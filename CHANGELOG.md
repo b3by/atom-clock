@@ -1,5 +1,6 @@
 ## 0.0.7 - Moment dependency update
 * :arrow_up: :lock: `moment.js` dependency updated to latest stable and secure version
+* :racehorse: `moment.js` is lazily imported, so loading and activation times are significantly reduced.
 
 ## 0.0.6
 * Specs fixed
