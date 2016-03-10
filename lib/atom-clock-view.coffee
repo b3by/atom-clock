@@ -8,7 +8,7 @@ class AtomClockView extends View
   dateFormat: null
   showIncon: false
   refreshInterval: 0
-  moment: null
+  Moment: null
 
   statusBar: null
   tick:      null
@@ -57,8 +57,8 @@ class AtomClockView extends View
     @startTicker()
 
   setDate: =>
-    @moment ?= (require 'moment')()
-    @date = @moment.format @dateFormat
+    @Moment ?= (require 'moment')
+    @date = @Moment().format @dateFormat
     @clockIndicator.text @date
 
   setIcon: (toSet) ->
