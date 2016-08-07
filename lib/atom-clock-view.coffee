@@ -79,4 +79,4 @@ class AtomClockView extends View
   destroy: =>
     @clearTicker()
     @subscriptions.dispose()
-    this.remove()
+    @remove()
