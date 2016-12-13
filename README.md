@@ -8,7 +8,7 @@
 View in [atom.io](https://atom.io/packages/atom-clock).
 
 This package allows you to display a clock in your status bar.
-It leverages on [`moment.js`](http://momentjs.com/) package in order to format
+It leverages [`moment.js`](http://momentjs.com/) in order to format
 the time as requested.
 
 ### Configuration items
