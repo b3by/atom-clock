@@ -6,12 +6,12 @@ module.exports = AtomClock =
     dateFormat:
       type: 'string'
       title: 'Time format'
-      description: 'Specify the time format. Please take a look ad http://momentjs.com/docs/#/displaying/format/ to check all the available formats.'
+      description: 'Specify the time format. Please take a look at http://momentjs.com/docs/#/displaying/format/ to check all the available formats.'
       default: 'H:mm'
     refreshInterval:
       type: 'integer'
       title: 'Clock interval'
-      description: 'Specify the refresh interval for the plugin to evaluate the date. This interval is in seconds.'
+      description: 'Specify the refresh interval (in seconds) for the plugin to evaluate the current date.'
       default: 60
       minimum: 1
     showClockIcon:
