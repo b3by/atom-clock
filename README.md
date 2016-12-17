@@ -53,7 +53,7 @@ a format like `[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
 
 ### Contributing
 Please, feel free to fork this repository, and make any change you like. If you
-want to propose a nice feature, please create a separate branch on your fork
-named after the feature you want to implement, the make a pull request from that
+want to propose a nice feature, please create a separate branch on your fork,
+named after the feature you want to implement, then make a pull request from that
 branch. Also, before actually getting to work, just consider I'm trying to keep
 this package as simple as possible!
