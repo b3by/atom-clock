@@ -8,8 +8,8 @@
 View in [atom.io](https://atom.io/packages/atom-clock).
 
 This package allows you to display a clock in your status bar.
-It leverages [`moment.js`](http://momentjs.com/) in order to format
-the time as requested.
+It leverages [`moment.js`](http://momentjs.com/) in order to show the time in
+several nice formats.
 
 ### Configuration items
 * Date format: it specifies the format to use when displaying the date. It has to
@@ -50,3 +50,10 @@ If you are a bit of a psychopath and you really care about the time, you can use
 a format like `[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
 
 ![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)
+
+### Contributing
+Please, feel free to fork this repository, and make any change you like. If you
+want to propose a nice feature, please create a separate branch on your fork
+named after the feature you want to implement, the make a pull request from that
+branch. Also, before actually getting to work, just consider I'm trying to keep
+this package as simple as possible!
