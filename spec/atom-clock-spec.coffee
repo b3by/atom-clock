@@ -12,13 +12,13 @@ describe 'Atom Clock', ->
     clock = null
 
   it 'should have all the required methods', ->
-    expect(typeof clock.setConfigValues).toBe 'function'
+    # expect(typeof clock.setConfigValues).toBe 'function'
     expect(typeof clock.startTicker).toBe 'function'
     expect(typeof clock.clearTicker).toBe 'function'
     expect(typeof clock.refreshTicker).toBe 'function'
     expect(typeof clock.setDate).toBe 'function'
     expect(typeof clock.setIcon).toBe 'function'
-    expect(typeof clock.setStatusBar).toBe 'function'
+    # expect(typeof clock.setStatusBar).toBe 'function'
     expect(typeof clock.attach).toBe 'function'
     expect(typeof clock.toggle).toBe 'function'
 
