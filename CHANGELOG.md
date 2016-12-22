@@ -1,3 +1,6 @@
+## 0.1.1
+* New locale feature added (see [pull request](https://github.com/b3by/atom-clock/pull/11))
+
 ## 0.1.0
 * New code: the package has been written in ES6, so no more CoffeeScript
 * New view: the clock element is now manually added, so `atom-space-pen-views` has been dismissed, drastically reducing the activation time
