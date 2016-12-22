@@ -52,4 +52,8 @@ a format like `[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
 ![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)
 
 ### Contributing
-Like what you see? Feel free to fork the project and file as many merge requests as you please! Make sure to spawn a new branch for each merge request, so it will be easier to accept them! Also, before you get you hands on the code, consider I'd like to keep this package as simple and minimal as possible.
+**Like what you see?** Feel free to fork the project and file as many merge requests as you please! Make sure to spawn a new branch for each merge request, so it will be easier to accept them! Also, before you get you hands on the code, consider I'd like to keep this package as simple and minimal as possible.
+
+If you're not into coding, you can still support the project and buy me a beer!
+
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/badges?type=1&size=xs)](https://www.gitcheese.com/app/#/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/pledges/create)
