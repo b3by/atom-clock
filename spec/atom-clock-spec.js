@@ -25,6 +25,7 @@ describe('Atom Clock', () => {
     expect(AtomClock.atomClockView.element).toBeDefined()
 
     expect(AtomClock.config.dateFormat.default).toBe('H:mm')
+    expect(AtomClock.config.locale.default).toBe('en')
     expect(AtomClock.config.refreshInterval.default).toBe(60)
     expect(AtomClock.config.showClockIcon.default).toBe(false)
   })
