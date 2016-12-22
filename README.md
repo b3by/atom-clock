@@ -14,7 +14,8 @@ highly customizable.
 ### Configuration items
 * **Date format**: it specifies the format to use when displaying the date. It has to
 be compliant with `moment.js` (defaulted to `H:mm`)
-* **Refresh interval**: it specifies how many seconds should run between two time
+* **Locale**: it specifies the locale you want to use (defaulted to `en`)
+* **Clock interval**: it specifies how many seconds should run between two time
 updates (defaulted to 60)
 * **Show icon**: it specifies whether to show or not the icon (defaulted to `false`)
 
@@ -50,6 +51,18 @@ If you are a bit of a psychopath and you really care about the time, you can use
 a format like `[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
 
 ![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)
+
+### Locales
+It is possible to specify the desired locale to be used, so the clock will change
+accordingly.
+
+#### Some examples
+
+Chinese local `zh_CN`: ![Chinese_China](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_chinese_china.png?raw=true)
+
+Arabic locale `ar`: ![Arabic](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_arabic.png?raw=true)
+
+Russian locale `ru`: ![Russian](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_russian.png?raw=true)
 
 ### Contributing
 **Like what you see?** Please, feel free to fork this repository, and make any change you like. If you
