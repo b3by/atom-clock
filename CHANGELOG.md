@@ -1,3 +1,8 @@
+## 0.1.0
+* New code: the package has been written in ES6, so no more CoffeeScript
+* New view: the clock element is now manually added, so `atom-space-pen-views` has been dismissed, drastically reducing the activation time
+* Toggling the package now does not loose the ticker
+
 ## 0.0.8
 * :bug: Fixed major bug about time refresh into status bar (see [issue \#6](https://github.com/b3by/atom-clock/issues/6))
 
