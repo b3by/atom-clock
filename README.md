@@ -1,22 +1,22 @@
 # atom-clock
-[![Build Status](https://img.shields.io/travis/b3by/atom-clock.svg?style=flat-square)](https://travis-ci.org/b3by/atom-clock)
-[![Dependencies!](https://img.shields.io/david/b3by/atom-clock.svg?style=flat-square)](https://david-dm.org/b3by/atom-clock)
-[![Plugin installs!](https://img.shields.io/apm/dm/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
-[![Package version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
+[![Build](https://img.shields.io/travis/b3by/atom-clock.svg?style=flat-square)](https://travis-ci.org/b3by/atom-clock)
+[![Deps!](https://img.shields.io/david/b3by/atom-clock.svg?style=flat-square)](https://david-dm.org/b3by/atom-clock)
+[![Installs!](https://img.shields.io/apm/dm/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
+[![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/b3by/atom-clock/blob/master/LICENSE.md)
 
-View in [atom.io](https://atom.io/packages/atom-clock).
+Visit the [atom.io](https://atom.io/) [page](https://atom.io/packages/atom-clock).
 
 This package allows you to display a clock in your status bar.
-It leverages [`moment.js`](http://momentjs.com/) in order to show the time in
-several nice formats.
+It uses [`moment.js`](http://momentjs.com/) to format the time, so its layout is
+highly customizable.
 
 ### Configuration items
-* Date format: it specifies the format to use when displaying the date. It has to
+* **Date format**: it specifies the format to use when displaying the date. It has to
 be compliant with `moment.js` (defaulted to `H:mm`)
-* Refresh interval: it specifies how many seconds should run between two time
+* **Refresh interval**: it specifies how many seconds should run between two time
 updates (defaulted to 60)
-* Show icon: it specifies whether to show or not the icon (defaulted to `false`)
+* **Show icon**: it specifies whether to show or not the icon (defaulted to `false`)
 
 ### Format examples
 
@@ -52,8 +52,12 @@ a format like `[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`, so you'll get:
 ![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)
 
 ### Contributing
-Please, feel free to fork this repository, and make any change you like. If you
+**Like what you see?** Please, feel free to fork this repository, and make any change you like. If you
 want to propose a nice feature, please create a separate branch on your fork,
 named after the feature you want to implement, then make a pull request from that
 branch. Also, before actually getting to work, just consider I'm trying to keep
-this package as simple as possible!
+this package as simple and minimal as possible!
+
+If you're not into coding, you can still support the project and buy me a beer!
+
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/badges?type=1&size=xs)](https://www.gitcheese.com/app/#/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/pledges/create)
