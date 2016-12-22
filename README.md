@@ -5,7 +5,7 @@
 [![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/b3by/atom-clock/blob/master/LICENSE.md)
 
-Visit the [atom.io](https://atom.io/) [page](https://atom.io/packages/atom-clock).
+Visit the page on [atom.io](https://atom.io/packages/atom-clock).
 
 This package allows you to display a clock in your status bar.
 It uses [`moment.js`](http://momentjs.com/) to format the time, so its layout is
