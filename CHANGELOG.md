@@ -1,3 +1,7 @@
+## 0.1.2
+* Small code refactoring
+* Readme updated with gitcheese and flattr buttons
+
 ## 0.1.1
 * New locale feature added (see [pull request](https://github.com/b3by/atom-clock/pull/11))
 

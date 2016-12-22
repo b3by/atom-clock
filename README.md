@@ -5,11 +5,15 @@
 [![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/b3by/atom-clock/blob/master/LICENSE.md)
 
-Visit the page on [atom.io](https://atom.io/packages/atom-clock).
-
 This package allows you to display a clock in your status bar.
 It uses [`moment.js`](http://momentjs.com/) to format the time, so its layout is
 highly customizable.
+
+**Support the clock cause!**
+
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/badges)](https://www.gitcheese.com/app/#/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/pledges/create)
+
+[![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=b3by&url=https://github.com/b3by/atom-clock&title=atom-clock&language=&tags=github&category=software)
 
 ### Configuration items
 * **Date format**: it specifies the format to use when displaying the date. It has to
@@ -70,7 +74,3 @@ want to propose a nice feature, please create a separate branch on your fork,
 named after the feature you want to implement, then make a pull request from that
 branch. Also, before actually getting to work, just consider I'm trying to keep
 this package as simple and minimal as possible!
-
-If you're not into coding, you can still support the project and buy me a beer!
-
-[![gitcheese.com](https://api.gitcheese.com/v1/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/badges?type=1&size=xs)](https://www.gitcheese.com/app/#/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/pledges/create)
