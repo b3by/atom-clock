@@ -1,11 +1,15 @@
+## 0.1.3
+* :racehorse: `moment.js` is (again) lazily imported, so loading and activation times are (again) significantly reduced
+* README updated with a cool SAVE THE CLOCK TOWER pic!
+
 ## 0.1.2
 * Small code refactoring
-* Readme updated with gitcheese and flattr buttons
+* README updated with gitcheese and flattr buttons
 
 ## 0.1.1
 * New locale feature added (see [pull request](https://github.com/b3by/atom-clock/pull/11))
 
-## 0.1.0
+## 0.1.0 - ES6 conversion
 * New code: the package has been written in ES6, so no more CoffeeScript
 * New view: the clock element is now manually added, so `atom-space-pen-views` has been dismissed, drastically reducing the activation time
 * Toggling the package now does not loose the ticker
@@ -15,7 +19,7 @@
 
 ## 0.0.7 (license to clock) - Moment dependency update
 * :arrow_up: :lock: `moment.js` dependency updated to latest stable and secure version
-* :racehorse: `moment.js` is lazily imported, so loading and activation times are significantly reduced.
+* :racehorse: `moment.js` is lazily imported, so loading and activation times are significantly reduced
 
 ## 0.0.6
 * Specs fixed
