@@ -66,4 +66,4 @@ this package as simple and minimal as possible!
 
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=b3by&url=https://github.com/b3by/atom-clock&title=atom-clock&language=&tags=github&category=software)
 
-![Save the clock]((https://raw.githubusercontent.com/b3by/atom-clock/master/images/savetheclock.jpg?raw=true)
+![Save the clock](https://raw.githubusercontent.com/b3by/atom-clock/master/images/savetheclock.jpg?raw=true)
