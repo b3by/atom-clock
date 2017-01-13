@@ -3,6 +3,11 @@
   "main": "./lib/atom-clock",
   "version": "0.1.2",
   "description": "Display a clock in the status bar.",
+  "author": {
+    "name": "Antonio Bevilacqua",
+    "email": "b3by.in.th3.sky@gmail.com",
+    "url": "https://github.com/b3by"
+  },
   "keywords": [
     "clock",
     "time",
