@@ -36,7 +36,7 @@ If ticked, a clock icon will be shown to the left of the time. It is unticked by
 |format|description|display|
 |:----:|:---------:|:-----:|
 |`H:mm`|default date format|![Default format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/default.png?raw=true)|
-|`h:mm`|am/pm format|![AM/PM format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/ampm.png?raw=true)|
+|`h:mm a`|am/pm format|![AM/PM format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/ampm.png?raw=true)|
 |`DD/MM/YYYY, H:mm`|short date format|![Short format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/short.png?raw=true)|
 |`MMMM Do, dddd, h:mm:ss a`|long date format|![Long format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/long.png?raw=true)|
 |`[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`|space waster format|![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)|
