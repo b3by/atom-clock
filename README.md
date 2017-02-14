@@ -62,8 +62,6 @@ branch. Also, before actually getting to work, just consider I'm trying to keep
 this package as simple and minimal as possible!
 
 ### Save the clock tower!
-[![gitcheese.com](https://api.gitcheese.com/v1/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/badges)](https://www.gitcheese.com/app/#/projects/02a01ca0-951a-402b-9a07-4a4f8e2bf45d/pledges/create)
-
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=b3by&url=https://github.com/b3by/atom-clock&title=atom-clock&language=&tags=github&category=software)
 
 ![Save the clock](https://raw.githubusercontent.com/b3by/atom-clock/master/images/savetheclock.jpg?raw=true)
