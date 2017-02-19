@@ -1,8 +1,8 @@
 ## 0.1.4
-* Clock has now a fixed width, calculated according to the content (check the related issue [here](https://github.com/b3by/atom-clock/issues/16))
-* Monospaced font available for the clock
+* :bug: Clock has now a fixed width, calculated according to the content (check the related issue [here](https://github.com/b3by/atom-clock/issues/16))
 * Small typo fixed in the README file (pull request [here](https://github.com/b3by/atom-clock/pull/14))
 * GitCheese no longer used for tips
+* Welcome Beerpay!
 
 ## 0.1.3
 * :racehorse: `moment.js` is (again) lazily imported, so loading and activation times are (again) significantly reduced
