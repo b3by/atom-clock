@@ -1,3 +1,7 @@
+## 0.1.5
+* :bug: Global variables removed from the code, preventing the clock from breaking
+in future versions based on babel 6 (see issue [here](https://github.com/b3by/atom-clock/issues/18))
+
 ## 0.1.4
 * :bug: Clock has now a fixed width, calculated according to the content (check the related issue [here](https://github.com/b3by/atom-clock/issues/16))
 * Small typo fixed in the README file (pull request [here](https://github.com/b3by/atom-clock/pull/14))
