@@ -1,3 +1,10 @@
+## 0.1.6
+* :bug: Content size does not get properly calculated, so the clock content can
+overflow and the last part of it might not show up (see issue [here](https://github.com/b3by/atom-clock/issues/20)
+and [here](https://github.com/b3by/atom-clock/issues/21))
+* Clock content is not dynamically calculated, rather the clock position
+is now set as relative.
+
 ## 0.1.5
 * :bug: Global variables removed from the code, preventing the clock from breaking
 in future versions based on babel 6 (see issue [here](https://github.com/b3by/atom-clock/issues/18))
