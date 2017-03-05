@@ -2,7 +2,7 @@
   "name": "atom-clock",
   "main": "./lib/atom-clock",
   "version": "0.1.5",
-  "description": "Display a clock in the status bar.",
+  "description": "Display a customizable clock in the status bar.",
   "author": {
     "name": "Antonio Bevilacqua",
     "email": "b3by.in.th3.sky@gmail.com",
@@ -11,6 +11,8 @@
   "keywords": [
     "clock",
     "time",
+    "date",
+    "statusbar",
     "momentjs"
   ],
   "repository": "https://github.com/b3by/atom-clock",
