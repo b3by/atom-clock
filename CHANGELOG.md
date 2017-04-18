@@ -1,3 +1,8 @@
+## 0.1.7
+* :white_check_mark: New tests added to make the package more robust. The
+configuration items are now tested so that when the clock format or the clock
+locale are changed, the proper content is expected in the status bar.
+
 ## 0.1.6
 * :bug: Content size does not get properly calculated, so the clock content can
 overflow and the last part of it might not show up (see issue

@@ -3,12 +3,14 @@
 describe('Atom Clock', () => {
 
   let AtomClock
+  let workspaceElement
 
   beforeEach(() => {
-    let workspaceElement = atom.views.getView(atom.workspace)
+    workspaceElement = atom.views.getView(atom.workspace)
     jasmine.attachToDOM(workspaceElement)
 
     let statusBar
+
     waitsForPromise(() => atom.packages.activatePackage('status-bar').then((pack) => {
       statusBar = workspaceElement.querySelector('status-bar')
     }))

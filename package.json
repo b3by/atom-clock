@@ -29,5 +29,8 @@
         "^1.0.0": "consumeStatusBar"
       }
     }
+  },
+  "devDependencies": {
+    "mockdate": "^2.0.1"
   }
 }
