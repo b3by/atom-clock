@@ -53,14 +53,14 @@ describe('Atom Clock', () => {
 
     atom.config.set('atom-clock.dateFormat', 'DD dddd YY H:mm')
     date = workspaceElement.querySelector('.atom-clock > span').innerText
-    expect(date).toBe('11 Saturday 87 4:00')
+    expect(date.toLowerCase()).toBe('11 saturday 87 4:00')
   })
 
   it('should change the clock content according with the locale', () => {
     atom.config.set('atom-clock.dateFormat', 'DD dddd YY H:mm')
     atom.config.set('atom-clock.locale', 'it')
     date = workspaceElement.querySelector('.atom-clock > span').innerText
-    expect(date).toBe('11 Sabato 87 4:00')
+    expect(date.toLowerCase()).toBe('11 sabato 87 4:00')
   })
 
 })
