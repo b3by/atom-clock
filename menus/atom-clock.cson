@@ -2,7 +2,7 @@
   {
     'label': 'Packages'
     'submenu': [
-      'label': 'atom-clock'
+      'label': 'Atom Clock'
       'submenu': [
         {
           'label': 'Toggle clock in status bar'
