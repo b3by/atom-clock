@@ -1,3 +1,14 @@
+## 0.1.8
+* :bug: Clock is redrawn so that its alignment is fixed with the system status
+bar elements (see issue [here](https://github.com/b3by/atom-clock/issues/27)
+and pull request [here](https://github.com/b3by/atom-clock/pull/25) - the
+pull request was not accepted eventually, but it highly inspired my changes,
+that and the `status-bar` package).
+* :bug: Menu label is updated so that it is more user friendly (check pull
+  request [here](https://github.com/b3by/atom-clock/pull/28)).
+* :green_heart: Travis build fixed with new Linux image (again, check pull
+  request [here](https://github.com/b3by/atom-clock/pull/28)).
+
 ## 0.1.7
 * :white_check_mark: New tests added to make the package more robust. The
 configuration items are now tested so that when the clock format or the clock

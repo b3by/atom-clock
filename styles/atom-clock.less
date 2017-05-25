@@ -1,13 +1,15 @@
 @import "ui-variables";
+@import "octicon-mixins";
 
 .atom-clock {
   display: inline-block;
-  margin-left: 1em;
-  margin-right: 0.5em;
+  margin-left: @component-padding;
   position: relative;
-  vertical-align: middle;
 
-  .span {
-    text-align: left;
+  .icon:before {
+    .icon-size(14px);
+    top: 1px;
+    margin-right: 3px;
   }
+
 }
