@@ -66,7 +66,6 @@ describe('Atom Clock', () => {
   })
 
   it('should show the time in the tooltip with the default format', () => {
-    atom.config.set('atom-clock.showTooltip', true)
     date = getTooltipDate(workspaceElement)
     expect(date.toLowerCase()).toBe('saturday, april 11, 1987 4:00 am')
   })
@@ -82,15 +81,11 @@ describe('Atom Clock', () => {
   })
 
   it('should change the format of the displayed time in the tooltip', () => {
-    atom.config.set('atom-clock.showTooltip', true)
-
     atom.config.set('atom-clock.tooltipDateFormat', 'H:mm:ss')
-    tooltip = getTooltips(workspaceElement)[0]
     date = getTooltipDate(workspaceElement)
     expect(date).toBe('4:00:00')
 
     atom.config.set('atom-clock.tooltipDateFormat', 'DD dddd YY H:mm')
-    tooltip = getTooltips(workspaceElement)[0]
     date = getTooltipDate(workspaceElement)
     expect(date.toLowerCase()).toBe('11 saturday 87 4:00')
   })
