@@ -27,6 +27,8 @@ describe('Atom Clock', () => {
     expect(AtomClock.atomClockView.element).toBeDefined()
 
     expect(AtomClock.config.dateFormat.default).toBe('H:mm')
+    expect(AtomClock.config.showTooltip.default).toBe(false)
+    expect(AtomClock.config.tooltipDateFormat.default).toBe('LLLL')
     expect(AtomClock.config.locale.default).toBe('en')
     expect(AtomClock.config.refreshInterval.default).toBe(60)
     expect(AtomClock.config.showClockIcon.default).toBe(false)
@@ -39,11 +41,25 @@ describe('Atom Clock', () => {
     expect(AtomClock.atomClockView.refreshTicker).toHaveBeenCalled()
   })
 
+  it('should refresh the ticker when the tooltip date format is changed', () => {
+    spyOn(AtomClock.atomClockView, 'refreshTicker')
+
+    atom.config.set('atom-clock.tooltipDateFormat', 'H')
+    expect(AtomClock.atomClockView.refreshTicker).toHaveBeenCalled()
+  })
+
   it('should refresh the ticker when the interval is changed', () => {
     spyOn(AtomClock.atomClockView, 'refreshTicker')
 
     atom.config.set('atom-clock.refreshInterval', '20')
     expect(AtomClock.atomClockView.refreshTicker).toHaveBeenCalled()
+  })
+
+  it('should set the configuration values when the tooltip is enabled', () => {
+    spyOn(AtomClock.atomClockView, 'setConfigValues')
+
+    atom.config.set('atom-clock.showTooltip', true)
+    expect(AtomClock.atomClockView.setConfigValues).toHaveBeenCalled()
   })
 
   it('should set the configuration values when clock icon is requested', () => {

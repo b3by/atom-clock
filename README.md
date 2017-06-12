@@ -19,8 +19,11 @@ The clock can be installed through Atom. Alternatively, you can use `apm`:
 
 ### Settings
 
-##### Date format
-It specifies the format to use when displaying the date. The package uses `moment.js` to format the time, so please refer to the related [`moment.js` documentation](http://momentjs.com/docs/#/displaying/format/). The default value for the date format is `H:mm`.
+##### Time format
+It specifies the format to use when displaying the time. The package uses `moment.js` to format the time, so please refer to the related [`moment.js` documentation](http://momentjs.com/docs/#/displaying/format/). The default value for the time format is `H:mm`.
+
+#### Tooltip
+If enabled, a tooltip will be shown when you hover over the time in the status bar to display the time in an alternate format. By default the tooltip is disabled, and the format is `LLLL`.
 
 ##### Locale
 It specifies the locale the clock will use when displaying the time. Its default value is `en`. Please check the [`moment.js` locale folder](https://github.com/moment/moment/tree/master/locale) for a complete list of all supported locales.
