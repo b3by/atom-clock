@@ -1,3 +1,8 @@
+## 0.1.9
+* New tooltip added to the configuration, so a more extensive date format can
+be displayed when the mouse is over the clock (check pull
+request [here](https://github.com/b3by/atom-clock/pull/29)).
+
 ## 0.1.8
 * :bug: Clock is redrawn so that its alignment is fixed with the system status
 bar elements (see issue [here](https://github.com/b3by/atom-clock/issues/27)
