@@ -22,7 +22,7 @@ The clock can be installed through Atom. Alternatively, you can use `apm`:
 ##### Time format
 It specifies the format to use when displaying the time. The package uses `moment.js` to format the time, so please refer to the related [`moment.js` documentation](http://momentjs.com/docs/#/displaying/format/). The default value for the time format is `H:mm`.
 
-#### Tooltip
+##### Tooltip
 If enabled, a tooltip will be shown when you hover over the time in the status bar to display the time in an alternate format. By default the tooltip is disabled, and the format is `LLLL`.
 
 ##### Locale
@@ -56,6 +56,13 @@ Here are some examples for locales different from English.
 |Tibetan|`bo`|![Tibetan](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_tibetan.png?raw=true)|
 |Russian|`ru`|![Russian](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_russian.png?raw=true)|
 |Chinese|`zh_CN`|![Chinese_China](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_chinese_china.png?raw=true)|
+
+### Tooltip
+When enabled, the tooltip will contain an extended (and configurable) version of
+the current time/date.
+
+![Tooltip appearance](https://raw.githubusercontent.com/b3by/atom-clock/master/images/tooltip.png?raw=true)
+
 
 ### Contributing
 **Like what you see?** Please, feel free to fork this repository, and make any change you like. If you
