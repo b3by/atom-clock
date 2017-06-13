@@ -61,7 +61,7 @@ Here are some examples for locales different from English.
 When enabled, the tooltip will contain an extended (and configurable) version of
 the current time/date.
 
-![Tooltip appearance](https://raw.githubusercontent.com/b3by/atom-clock/master/images/tooltip.png?raw=true)
+![Tooltip appearance](https://raw.githubusercontent.com/b3by/atom-clock/master/images/tooltip.png)
 
 
 ### Contributing
