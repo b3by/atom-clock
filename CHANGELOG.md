@@ -1,3 +1,9 @@
+## 0.1.10
+* New priority set for the clock, so that now it should be placed at the very
+right of the bar (at least, compared to other core packages). Should be this
+defined into a new configuration item, that's still unclear.
+* README file style fixed.
+
 ## 0.1.9
 * New tooltip added to the configuration, so a more extensive date format can
 be displayed when the mouse is over the clock (check pull
