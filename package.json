@@ -1,7 +1,7 @@
 {
   "name": "atom-clock",
   "main": "./lib/atom-clock",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "description": "Display a customizable clock in the status bar.",
   "author": {
     "name": "Antonio Bevilacqua",
