@@ -1,6 +1,6 @@
 ## 0.1.11
 * :green_heart: Travis fixed so that the configuration file is aligned with the
-  one from Atom itself.
+  one from Atom itself ([here](https://github.com/b3by/atom-clock/pull/34) for the pull request).
 
 ## 0.1.10
 * New priority set for the clock, so that now it should be placed at the very
