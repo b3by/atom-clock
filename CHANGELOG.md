@@ -1,3 +1,7 @@
+## 0.1.11
+* :green_heart: Travis fixed so that the configuration file is aligned with the
+  one from Atom itself.
+
 ## 0.1.10
 * New priority set for the clock, so that now it should be placed at the very
 right of the bar (at least, compared to other core packages). Should be this
