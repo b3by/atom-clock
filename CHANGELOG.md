@@ -1,3 +1,10 @@
+## 0.1.12
+* :fire: Style file removed from the package
+  (see [pull request](https://github.com/b3by/atom-clock/pull/36)).
+* :fire: Empty keybinding folder removed.
+* :white_check_mark: [AppVeyor](https://ci.appveyor.com/project/b3by/atom-clock) added as CI
+  service: upgrayedd to double-dose of pimpin'.
+
 ## 0.1.11
 * :green_heart: Travis fixed so that the configuration file is aligned with the
   one from Atom itself ([here](https://github.com/b3by/atom-clock/pull/34) for the pull request).
