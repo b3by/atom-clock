@@ -17,7 +17,6 @@ describe('Atom Clock', () => {
 
     waitsForPromise(() => atom.packages.activatePackage('atom-clock').then((clk) => {
       AtomClock = clk.mainModule
-      AtomClock.consumeStatusBar(statusBar)
     }))
 
     waitsForPromise(() => atom.workspace.open())
@@ -94,4 +93,11 @@ describe('Atom Clock', () => {
     expect(AtomClock.atomClockView.element.style.display).toBe('')
   })
 
+  it('should toggle UTC mode when toggled', () => {
+    atom.commands.dispatch(document.querySelector('atom-workspace'), 'atom-clock:utc-mode')
+    expect(AtomClock.atomClockView.showUTC).toBe(true)
+
+    atom.commands.dispatch(document.querySelector('atom-workspace'), 'atom-clock:utc-mode')
+    expect(AtomClock.atomClockView.showUTC).toBe(false)
+  })
 })
