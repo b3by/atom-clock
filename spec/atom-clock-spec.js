@@ -17,7 +17,6 @@ describe('Atom Clock', () => {
 
     waitsForPromise(() => atom.packages.activatePackage('atom-clock').then((clk) => {
       AtomClock = clk.mainModule
-      AtomClock.consumeStatusBar(statusBar)
     }))
 
     waitsForPromise(() => atom.workspace.open())
@@ -30,6 +29,7 @@ describe('Atom Clock', () => {
     expect(AtomClock.config.showTooltip.default).toBe(false)
     expect(AtomClock.config.tooltipDateFormat.default).toBe('LLLL')
     expect(AtomClock.config.locale.default).toBe('en')
+    expect(AtomClock.config.showUTC.default).toBe(false)
     expect(AtomClock.config.refreshInterval.default).toBe(60)
     expect(AtomClock.config.showClockIcon.default).toBe(false)
   })
@@ -45,6 +45,13 @@ describe('Atom Clock', () => {
     spyOn(AtomClock.atomClockView, 'refreshTicker')
 
     atom.config.set('atom-clock.tooltipDateFormat', 'H')
+    expect(AtomClock.atomClockView.refreshTicker).toHaveBeenCalled()
+  })
+
+  it('should refresh the ticker when the UTC display setting is changed', () => {
+    spyOn(AtomClock.atomClockView, 'refreshTicker')
+
+    atom.config.set('atom-clock.showUTC', true)
     expect(AtomClock.atomClockView.refreshTicker).toHaveBeenCalled()
   })
 
@@ -86,4 +93,11 @@ describe('Atom Clock', () => {
     expect(AtomClock.atomClockView.element.style.display).toBe('')
   })
 
+  it('should toggle UTC mode when toggled', () => {
+    atom.commands.dispatch(document.querySelector('atom-workspace'), 'atom-clock:utc-mode')
+    expect(AtomClock.atomClockView.showUTC).toBe(true)
+
+    atom.commands.dispatch(document.querySelector('atom-workspace'), 'atom-clock:utc-mode')
+    expect(AtomClock.atomClockView.showUTC).toBe(false)
+  })
 })

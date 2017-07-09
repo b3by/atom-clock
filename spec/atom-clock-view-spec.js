@@ -23,7 +23,7 @@ describe('Atom Clock', () => {
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace)
     jasmine.attachToDOM(workspaceElement)
-    MockDate.set('1987-04-11 04:00')
+    MockDate.set('1987-04-11 04:00', -300)
 
     let statusBar
     let AtomClock
@@ -106,6 +106,30 @@ describe('Atom Clock', () => {
     atom.config.set('atom-clock.locale', 'it')
     date = getTooltipDate(workspaceElement)
     expect(date.toLowerCase()).toBe('11 sabato 87 4:00')
+  })
+
+  it('should change the whether UTC time is displayed', () => {
+    atom.config.set('atom-clock.dateFormat', 'ZZ')
+
+    atom.config.set('atom-clock.showUTC', false)
+    date = getDate(workspaceElement)
+    expect(date.toLowerCase()).toBe('+0500')
+
+    atom.config.set('atom-clock.showUTC', true)
+    date = getDate(workspaceElement)
+    expect(date.toLowerCase()).toBe('+0000')
+  })
+
+  it('should change the whether UTC time is displayed in the tooltip', () => {
+    atom.config.set('atom-clock.tooltipDateFormat', 'ZZ')
+
+    atom.config.set('atom-clock.showUTC', false)
+    date = getTooltipDate(workspaceElement)
+    expect(date.toLowerCase()).toBe('+0500')
+
+    atom.config.set('atom-clock.showUTC', true)
+    date = getTooltipDate(workspaceElement)
+    expect(date.toLowerCase()).toBe('+0000')
   })
 
 })

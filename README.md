@@ -29,6 +29,9 @@ If enabled, a tooltip will be shown when you hover over the time in the status b
 ##### Locale
 It specifies the locale the clock will use when displaying the time. Its default value is `en`. Please check the [`moment.js` locale folder](https://github.com/moment/moment/tree/master/locale) for a complete list of all supported locales.
 
+##### UTC
+If enabled, both the status bar clock and tooltip clock (if enabled) will display UTC time instead of local time.
+
 ##### Clock interval
 It specifies how many seconds should run between two time updates, and it is defaulted to 60 (one update per minute).
 
