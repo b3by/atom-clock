@@ -4,6 +4,7 @@
 * :white_check_mark: Specs added for the UTC feature.
 * Configuration items rearranged, some dots added.
 * README file rearranged.
+* :arrow_up: `moment` updated to 2.18
 
 
 ## 0.1.12
