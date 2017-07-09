@@ -14,26 +14,27 @@ The clock can be installed through Atom. Alternatively, you can use `apm`:
 `apm install atom-clock`
 
 ### Features
-* Customizable time format: any format supported by [`moment.js`](http://momentjs.com/) is supported by `atom-clock` as well!
-* i18n: specify any locale to get the date in your language
-* Multi-platform package: the clock works with Linux, Windows and OS X
+* Customizable time format and locale: any format and locale supported by [`moment.js`](http://momentjs.com/) is supported by `atom-clock` as well!
+* i18n: specify any locale to get the date in your language.
+* UCT time: show the UTC time instead of the local time.
+* Multi-platform package: the clock works with Linux, Windows and OS X.
 
 ### Settings
 
 ##### Time format
 It specifies the format to use when displaying the time. The package uses `moment.js` to format the time, so please refer to the related [`moment.js` documentation](http://momentjs.com/docs/#/displaying/format/). The default value for the time format is `H:mm`.
 
-##### Tooltip
-If enabled, a tooltip will be shown when you hover over the time in the status bar to display the time in an alternate format. By default the tooltip is disabled, and the format is `LLLL`.
-
 ##### Locale
 It specifies the locale the clock will use when displaying the time. Its default value is `en`. Please check the [`moment.js` locale folder](https://github.com/moment/moment/tree/master/locale) for a complete list of all supported locales.
 
-##### UTC
-If enabled, both the status bar clock and tooltip clock (if enabled) will display UTC time instead of local time.
-
 ##### Clock interval
 It specifies how many seconds should run between two time updates, and it is defaulted to 60 (one update per minute).
+
+##### Tooltip
+If enabled, a tooltip will be shown when you hover over the time in the status bar to display the time in an alternate format. By default the tooltip is disabled, and the format is `LLLL`.
+
+##### UTC
+If enabled, both the status bar clock and the tooltip clock (if enabled) will display UTC time instead of local time.
 
 ##### Show icon
 If ticked, a clock icon will be shown to the left of the time. It is unticked by default.
@@ -66,7 +67,6 @@ When enabled, the tooltip will contain an extended (and configurable) version of
 the current time/date.
 
 ![Tooltip appearance](https://raw.githubusercontent.com/b3by/atom-clock/master/images/tooltip.png)
-
 
 ### Contributing
 **Like what you see?** Please, feel free to fork this repository, and make any change you like. If you

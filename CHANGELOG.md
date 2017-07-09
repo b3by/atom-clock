@@ -1,3 +1,11 @@
+## 0.1.13
+* New feature!! UTC time can be shown as well, instead of the regular time
+(every detail in the fantastic [pull request](https://github.com/b3by/atom-clock/pull/38)).
+* :white_check_mark: Specs added for the UTC feature.
+* Configuration items rearranged, some dots added.
+* README file rearranged.
+
+
 ## 0.1.12
 * :fire: Style file removed from the package
   (see [pull request](https://github.com/b3by/atom-clock/pull/36)).
