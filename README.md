@@ -16,8 +16,8 @@ The clock can be installed through Atom. Alternatively, you can use `apm`:
 ### Features
 * Customizable time format and locale: any format and locale supported by [`moment.js`](http://momentjs.com/) is supported by `atom-clock` as well!
 * i18n: specify any locale to get the date in your language.
-* UCT time: show the UTC time instead of the local time.
-* Multi-platform package: the clock works with Linux, Windows and OS X.
+* UTC time: show the UTC time instead of the local time.
+* Multi-platform package: the clock works with Linux, Windows and macOS.
 
 ### Settings
 
