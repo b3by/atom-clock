@@ -68,12 +68,93 @@ the current time/date.
 
 ![Tooltip appearance](https://raw.githubusercontent.com/b3by/atom-clock/master/images/tooltip.png)
 
+### Customization
+The CSS classes of the clock elements allow you to customize the appearance of
+the clock using your `styles.less` file.
+
+#### `.atom-clock`, `.atom-clock-icon` and `.atom-clock-time`
+These classes allow you to change the appearance of the whole content of the
+clock (`.atom-clock`), of the icon only (`.atom-clock-icon`), or of the time
+only (`.atom-clock-time`). A simple entry in the `styles.less` file looks like
+this:
+
+```scss
+.atom-clock {
+  color: red;
+}
+```
+
+![Atom Clock customization](https://raw.githubusercontent.com/b3by/atom-clock/master/images/basicAtomClock.gif)
+
+Editing the icon and the time separately:
+
+```scss
+.atom-clock-icon {
+  color: red;
+}
+
+.atom-clock-time {
+  color: green;
+}
+```
+
+![Icon and time customization](https://raw.githubusercontent.com/b3by/atom-clock/master/images/iconAndTime.gif)
+
+#### `.atom-clock-tooltip`
+This class can be used to change the appearance of the tooltip content, in
+conjunction with `.tooltip-inner`.
+
+```scss
+.atom-clock-tooltip .tooltip-inner {
+  color: orange;
+}
+```
+
+![Tooltip customization](https://raw.githubusercontent.com/b3by/atom-clock/master/images/basicTooltip.gif)
+
+#### `.atom-clock-utc`
+Selective customization can be applied when the UTC time is enabled. This can
+affect both the status bar content and the tooltip content.
+
+```scss
+.atom-clock.atom-clock-utc {
+  color: red;
+
+  &:after {
+    content: " (UTC)";
+  }
+}
+```
+
+![UTC clock](https://raw.githubusercontent.com/b3by/atom-clock/master/images/utcClock.gif)
+
+```scss
+.atom-clock-tooltip.atom-clock-utc .tooltip-inner {
+  color: red;
+
+  &:before {
+    content: "(UTC) ";
+  }
+}
+```
+
+![UTC tooltip](https://raw.githubusercontent.com/b3by/atom-clock/master/images/utcTooltip.gif)
+
 ### Contributing
 **Like what you see?** Please, feel free to fork this repository, and make any change you like. If you
 want to propose a nice feature, please create a separate branch on your fork,
 named after the feature you want to implement, then make a pull request from that
 branch. Also, before actually getting to work, just consider I'm trying to keep
 this package as simple and minimal as possible!
+
+### Hall of fame
+A special **THANK YOU** to all the contributors of the project!
+
+[frasertmay](https://github.com/frasertmay) (best contributor ever)
+
+[mark-hahn](https://github.com/mark-hahn)
+
+[GeNiuS69](https://github.com/GeNiuS69)
 
 ### Save the clock tower!
 [![Beerpay](https://beerpay.io/b3by/atom-clock/badge.svg?style=flat-square)](https://beerpay.io/b3by/atom-clock)
