@@ -132,4 +132,18 @@ describe('Atom Clock', () => {
     expect(date.toLowerCase()).toBe('+0000')
   })
 
+  it('should add atom-clock-utc class to the time when UTC is enabled', () => {
+    expect(workspaceElement.querySelector('.atom-clock.atom-clock-utc')).not.toExist()
+
+    atom.config.set('atom-clock.showUTC', true)
+    expect(workspaceElement.querySelector('.atom-clock.atom-clock-utc')).toExist()
+  })
+
+  it('should add atom-clock-utc class to the tooltip when UTC is enabled', () => {
+    expect(getTooltips(workspaceElement)[0].getTooltipElement().classList.contains('atom-clock-utc')).toBe(false)
+
+    atom.config.set('atom-clock.showUTC', true)
+    expect(getTooltips(workspaceElement)[0].getTooltipElement().classList.contains('atom-clock-utc')).toBe(true)
+  })
+
 })
