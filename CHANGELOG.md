@@ -1,9 +1,14 @@
 ## 0.1.15
+* UTC class added to clock items and tooltip, so that customization is possible
+  when the UTC time is enabled
+  (see [pull request](https://github.com/b3by/atom-clock/pull/43)).
 * :memo: Customization tips added to the README file.
 * :crown: Hall of fame in the README file! Thank you collaborators!
 
 ## 0.1.14
-* Tooltip class allows basic customization for font, size and color (see [pull request](https://github.com/b3by/atom-clock/pull/40) and related [issue](https://github.com/b3by/atom-clock/issues/35)).
+* Tooltip class allows basic customization for font, size and color
+  (see [pull request](https://github.com/b3by/atom-clock/pull/40) and
+  related [issue](https://github.com/b3by/atom-clock/issues/35)).
 * README typos fixing.
 
 ## 0.1.13
