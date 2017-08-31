@@ -1,6 +1,6 @@
 ## 0.1.15
-* Customization tips added to the README file.
-* Hall of fame in the README file! Thank you collaborators!
+* :memo: Customization tips added to the README file.
+* :crown: Hall of fame in the README file! Thank you collaborators!
 
 ## 0.1.14
 * Tooltip class allows basic customization for font, size and color (see [pull request](https://github.com/b3by/atom-clock/pull/40) and related [issue](https://github.com/b3by/atom-clock/issues/35)).
