@@ -43,11 +43,11 @@ If ticked, a clock icon will be shown to the left of the time. It is unticked by
 
 |format|description|display|
 |:----:|:---------:|:-----:|
-|`H:mm`|default date format|![Default format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/default.png?raw=true)|
-|`h:mm a`|am/pm format|![AM/PM format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/ampm.png?raw=true)|
-|`DD/MM/YYYY, H:mm`|short date format|![Short format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/short.png?raw=true)|
-|`MMMM Do, dddd, h:mm:ss a`|long date format|![Long format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/long.png?raw=true)|
-|`[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`|space waster format|![Useless format](https://raw.githubusercontent.com/b3by/atom-clock/master/images/useless.png?raw=true)|
+|`H:mm`|default date format|![Default format](images/format/default.png?raw=true)|
+|`h:mm a`|am/pm format|![AM/PM format](images/format/ampm.png?raw=true)|
+|`DD/MM/YYYY, H:mm`|short date format|![Short format](images/format/short.png?raw=true)|
+|`MMMM Do, dddd, h:mm:ss a`|long date format|![Long format](images/format/long.png?raw=true)|
+|`[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`|space waster format|![Useless format](images/format/useless.png?raw=true)|
 
 ### Locales
 When a different locale is specified in the settings, the date language will change accordingly. A locale can be defined with its substring, and `moment.js` will take care of selecting the first locale it knows. A substring can be specified in many ways. As example, the Chinese locale for China can be expressed as `zh-cn`, `zh_cn`, `zh-CN` or `zh_CN`.
@@ -56,17 +56,17 @@ Here are some examples for locales different from English.
 
 | locale | code | display |
 |:--------:|:------:|:---------:|
-|Arabic|`ar`|![Arabic](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_arabic.png?raw=true)|
-|Belarusian|`be`|![Belarusian](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_belarusian.png?raw=true)|
-|Tibetan|`bo`|![Tibetan](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_tibetan.png?raw=true)|
-|Russian|`ru`|![Russian](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_russian.png?raw=true)|
-|Chinese|`zh_CN`|![Chinese_China](https://raw.githubusercontent.com/b3by/atom-clock/master/images/locale_chinese_china.png?raw=true)|
+|Arabic|`ar`|![Arabic](images/locale/locale_arabic.png?raw=true)|
+|Belarusian|`be`|![Belarusian](images/locale/locale_belarusian.png?raw=true)|
+|Tibetan|`bo`|![Tibetan](images/locale/locale_tibetan.png?raw=true)|
+|Russian|`ru`|![Russian](images/locale/locale_russian.png?raw=true)|
+|Chinese|`zh_CN`|![Chinese_China](images/locale/locale_chinese_china.png?raw=true)|
 
 ### Tooltip
 When enabled, the tooltip will contain an extended (and configurable) version of
 the current time/date.
 
-![Tooltip appearance](https://raw.githubusercontent.com/b3by/atom-clock/master/images/tooltip.png)
+![Tooltip appearance](images/tooltip.png?raw=true)
 
 ### Customization
 The CSS classes of the clock elements allow you to customize the appearance of
@@ -84,7 +84,7 @@ this:
 }
 ```
 
-![Atom Clock customization](https://raw.githubusercontent.com/b3by/atom-clock/master/images/basicAtomClock.gif)
+![Atom Clock customization](images/customization/basicAtomClock.gif?raw=true)
 
 Editing the icon and the time separately:
 
@@ -98,7 +98,7 @@ Editing the icon and the time separately:
 }
 ```
 
-![Icon and time customization](https://raw.githubusercontent.com/b3by/atom-clock/master/images/iconAndTime.gif)
+![Icon and time customization](images/customization/iconAndTime.gif?raw=true)
 
 #### `.atom-clock-tooltip`
 This class can be used to change the appearance of the tooltip content, in
@@ -110,7 +110,7 @@ conjunction with `.tooltip-inner`.
 }
 ```
 
-![Tooltip customization](https://raw.githubusercontent.com/b3by/atom-clock/master/images/basicTooltip.gif)
+![Tooltip customization](images/customization/basicTooltip.gif?raw=true)
 
 #### `.atom-clock-utc`
 Selective customization can be applied when the UTC time is enabled. This can
@@ -126,7 +126,7 @@ affect both the status bar content and the tooltip content.
 }
 ```
 
-![UTC clock](https://raw.githubusercontent.com/b3by/atom-clock/master/images/utcClock.gif)
+![UTC clock](images/customization/utcClock.gif?raw=true)
 
 ```scss
 .atom-clock-tooltip.atom-clock-utc .tooltip-inner {
@@ -138,7 +138,7 @@ affect both the status bar content and the tooltip content.
 }
 ```
 
-![UTC tooltip](https://raw.githubusercontent.com/b3by/atom-clock/master/images/utcTooltip.gif)
+![UTC tooltip](images/customization/utcTooltip.gif?raw=true)
 
 ### Contributing
 **Like what you see?** Please, feel free to fork this repository, and make any change you like. If you
@@ -161,4 +161,4 @@ A special **THANK YOU** to all the contributors of the project!
 [![Beerpay](https://beerpay.io/b3by/atom-clock/make-wish.svg?style=flat-square)](https://beerpay.io/b3by/atom-clock?focus=wish)
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=b3by&url=https://github.com/b3by/atom-clock&title=atom-clock&language=&tags=github&category=software)
 
-![Save the clock](https://raw.githubusercontent.com/b3by/atom-clock/master/images/savetheclock.jpg?raw=true)
+![Save the clock](images/savetheclock.jpg?raw=true)
