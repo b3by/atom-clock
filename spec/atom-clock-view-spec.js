@@ -23,8 +23,8 @@ describe('Atom Clock', () => {
   beforeEach(() => {
     workspaceElement = atom.views.getView(atom.workspace)
     jasmine.attachToDOM(workspaceElement)
-    MockDate.set('1987-04-11 04:00', -300)
-    atom.config.set('atom-clock.timezone', 'Europe/Rome')
+    MockDate.set('1987-04-11 04:00:00 GMT', -60)
+    atom.config.set('atom-clock.timezone', 'Europe/Dublin')
 
     let statusBar
     let AtomClock
@@ -112,7 +112,7 @@ describe('Atom Clock', () => {
   it('should change the clock content according with the timezone', () => {
     atom.config.set('atom-clock.timezone', 'America/New_York')
     date = getDate(workspaceElement)
-    expect(date.toLowerCase()).toBe('23:00')
+    expect(date.toLowerCase()).toBe('0:00')
   })
 
   it('should change the whether UTC time is displayed', () => {
@@ -120,7 +120,7 @@ describe('Atom Clock', () => {
 
     atom.config.set('atom-clock.showUTC', false)
     date = getDate(workspaceElement)
-    expect(date.toLowerCase()).toBe('+0200')
+    expect(date.toLowerCase()).toBe('+0100')
 
     atom.config.set('atom-clock.showUTC', true)
     date = getDate(workspaceElement)
@@ -132,7 +132,7 @@ describe('Atom Clock', () => {
 
     atom.config.set('atom-clock.showUTC', false)
     date = getTooltipDate(workspaceElement)
-    expect(date.toLowerCase()).toBe('+0200')
+    expect(date.toLowerCase()).toBe('+0100')
 
     atom.config.set('atom-clock.showUTC', true)
     date = getTooltipDate(workspaceElement)
