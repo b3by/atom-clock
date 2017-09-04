@@ -6,6 +6,9 @@
 [![Version!](https://img.shields.io/apm/v/atom-clock.svg?style=flat-square)](https://atom.io/packages/atom-clock)
 [![License](https://img.shields.io/apm/l/atom-clock.svg?style=flat-square)](https://github.com/b3by/atom-clock/blob/master/LICENSE.md)
 
+[![GitHub stars](https://img.shields.io/github/stars/b3by/atom-clock.svg?style=social&label=Star)](https://github.com/b3by/atom-clock)
+[![GitHub forks](https://img.shields.io/github/forks/b3by/atom-clock.svg?style=social&label=Fork)](https://github.com/b3by/atom-clock)
+
 Display a customizable clock in the status bar.
 
 ### Installation
