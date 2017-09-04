@@ -1,3 +1,6 @@
+## 0.2
+* Timezone selection added to the package.
+
 ## 0.1.15
 * UTC class added to clock items and tooltip, so that customization is possible
   when the UTC time is enabled
