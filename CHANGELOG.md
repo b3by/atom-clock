@@ -1,3 +1,9 @@
+## 0.2
+* Timezone selection added to the package.
+* :white_check_mark: Timezone tests added
+* :arrow_up: `moment-timezone` dependency added
+* :arrow_down: `moment` dependency removed
+
 ## 0.1.15
 * UTC class added to clock items and tooltip, so that customization is possible
   when the UTC time is enabled
