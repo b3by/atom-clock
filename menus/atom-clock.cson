@@ -11,6 +11,10 @@
         {
           'label': 'Toggle UTC mode'
           'command': 'atom-clock:utc-mode'
+        },
+        {
+          'label': 'Toggle Bold Text'
+          'command': 'atom-clock:boldText'
         }
       ]
     ]
