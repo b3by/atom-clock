@@ -156,7 +156,7 @@ describe('Atom Clock', () => {
     expect(date.bold())
   })
   
-  it('should change the whether UTC time is displayed in the tooltip', () => {
+  it('should change the whether boldText is displayed in the tooltip', () => {
     atom.config.set('atom-clock.showBoldText', false)
     date = getTooltipDate(workspaceElement)
     expect(date)
