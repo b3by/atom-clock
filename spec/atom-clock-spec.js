@@ -102,9 +102,9 @@ describe('Atom Clock', () => {
   })
   it('should toggle bold text', () => {
     atom.commands.dispatch(document.querySelector('atom-workspace'), 'atom-clock:boldText')
-    expect(AtomClock.atomClockView.boldText).toBe(true)
+    expect(AtomClock.atomClockView.showBoldText).toBe(true)
 
     atom.commands.dispatch(document.querySelector('atom-workspace'), 'atom-clock:boldText')
-    expect(AtomClock.atomClockView.boldText).toBe(false)
+    expect(AtomClock.atomClockView.showBoldText).toBe(false)
   })
 })
