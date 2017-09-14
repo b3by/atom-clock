@@ -149,7 +149,7 @@ describe('Atom Clock', () => {
   it('should change the whether boldText is displayed', () => {
     atom.config.set('atom-clock.showBoldText', false)
     date = getDate(workspaceElement)
-    expect(date.bold())
+    expect(date)
 
     atom.config.set('atom-clock.BoldText', true)
     date = getDate(workspaceElement)
