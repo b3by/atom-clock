@@ -145,5 +145,39 @@ describe('Atom Clock', () => {
     atom.config.set('atom-clock.showUTC', true)
     expect(getTooltips(workspaceElement)[0].getTooltipElement().classList.contains('atom-clock-utc')).toBe(true)
   })
+  
+  it('should change the whether boldText is displayed', () => {
+    atom.config.set('atom-clock.showBoldText', false)
+    date = getDate(workspaceElement)
+    expect(date)
+
+    atom.config.set('atom-clock.BoldText', true)
+    date = getDate(workspaceElement)
+    expect(date.bold())
+  })
+  
+  it('should change the whether boldText is displayed in the tooltip', () => {
+    atom.config.set('atom-clock.showBoldText', false)
+    date = getTooltipDate(workspaceElement)
+    expect(date)
+
+    atom.config.set('atom-clock.showBoldText', true)
+    date = getTooltipDate(workspaceElement)
+    expect(date.bold())
+  })
+  
+  it('should add atom-clock-bold class to the time when UTC is enabled', () => {
+    expect(workspaceElement.querySelector('.atom-clock.atom-clock-bold')).not.toExist()
+
+    atom.config.set('atom-clock.showBoldText', true)
+    expect(workspaceElement.querySelector('.atom-clock.atom-clock-bold')).toExist()
+  })
+  
+  it('should add atom-clock-bold class to the tooltip when UTC is enabled', () => {
+    expect(getTooltips(workspaceElement)[0].getTooltipElement().classList.contains('atom-clock-bold')).toBe(false)
+
+    atom.config.set('atom-clock.showBoldText', true)
+    expect(getTooltips(workspaceElement)[0].getTooltipElement().classList.contains('atom-clock-bold')).toBe(true)
+  })
 
 })
