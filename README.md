@@ -48,8 +48,7 @@ If ticked, a clock icon will be shown to the left of the time. It is unticked by
 |:----:|:---------:|:-----:|
 |`H:mm`|default date format|![default](https://user-images.githubusercontent.com/472900/32742495-87ac0a00-c8a1-11e7-82f6-49d551bb18fe.png)|
 |`h:mm a`|am/pm format|![ampm](https://user-images.githubusercontent.com/472900/32742528-9d351d58-c8a1-11e7-8495-f98d0077e0f8.png)|
-|`DD/MM/YYYY, H:mm`|short date format|![short](https://user-images.githubusercontent.com/472900/32742553-afebf58e-c8a1-11e7-8b13-6538e03b41a8.png)
-|
+|`DD/MM/YYYY, H:mm`|short date format|![short](https://user-images.githubusercontent.com/472900/32742553-afebf58e-c8a1-11e7-8b13-6538e03b41a8.png)|
 |`MMMM Do, dddd, h:mm:ss a`|long date format|![long](https://user-images.githubusercontent.com/472900/32742572-bfa9efe4-c8a1-11e7-8e5f-e1b4b6d20282.png)|
 |`[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`|space waster format|![useless](https://user-images.githubusercontent.com/472900/32742583-cca6f9c6-c8a1-11e7-90b7-4c6ba9ea6480.png)|
 
