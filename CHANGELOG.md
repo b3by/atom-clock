@@ -1,3 +1,7 @@
+## 0.1.16
+* `.gitattributes` file added to ignore useless files (images, CI config...) (see
+  [pull request](https://github.com/b3by/atom-clock/pull/52)).
+
 ## 0.1.15
 * UTC class added to clock items and tooltip, so that customization is possible
   when the UTC time is enabled
