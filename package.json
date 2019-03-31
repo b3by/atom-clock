@@ -21,7 +21,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "moment": "^2.20.x"
+    "moment": "^2.24.x"
   },
   "consumedServices": {
     "status-bar": {
