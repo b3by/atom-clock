@@ -42,6 +42,9 @@ If enabled, both the status bar clock and the tooltip clock (if enabled) will di
 ##### Show icon
 If ticked, a clock icon will be shown to the left of the time. It is unticked by default.
 
+##### Full-screen only
+If ticked, the clock will only be visible when in full-screen.
+
 ### Some examples
 
 |format|description|display|

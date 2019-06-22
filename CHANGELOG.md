@@ -1,3 +1,7 @@
+## 0.1.17
+* Full-screen only option added (see [pull request](https://github.com/b3by/atom-clock/pull/64))
+* :memo: Full-screen option added to the README file
+
 ## 0.1.16
 * `.gitattributes` file added to ignore useless files (images, CI config...) (see
   [pull request](https://github.com/b3by/atom-clock/pull/52)).
