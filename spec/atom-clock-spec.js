@@ -30,6 +30,7 @@ describe('Atom Clock', () => {
     expect(AtomClock.config.tooltipDateFormat.default).toBe('LLLL')
     expect(AtomClock.config.locale.default).toBe('en')
     expect(AtomClock.config.showUTC.default).toBe(false)
+    expect(AtomClock.config.timeOffset.default).toBe(0)
     expect(AtomClock.config.refreshInterval.default).toBe(60)
     expect(AtomClock.config.showClockIcon.default).toBe(false)
   })

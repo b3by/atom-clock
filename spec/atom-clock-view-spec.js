@@ -146,4 +146,18 @@ describe('Atom Clock', () => {
     expect(getTooltips(workspaceElement)[0].getTooltipElement().classList.contains('atom-clock-utc')).toBe(true)
   })
 
+  it('should change the clock content according to the time offset', () => {
+	atom.config.set('atom-clock.timeOffset', 0)
+	date = getDate(workspaceElement)
+    expect(date).toBe('4:00')
+
+    atom.config.set('atom-clock.timeOffset', 60)
+	date = getDate(workspaceElement)
+    expect(date).toBe('5:00')
+
+    atom.config.set('atom-clock.timeOffset', 90)
+	date = getDate(workspaceElement)
+    expect(date).toBe('5:30')
+  })
+
 })
