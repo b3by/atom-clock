@@ -17,33 +17,51 @@ The clock can be installed through Atom. Alternatively, you can use `apm`:
 `apm install atom-clock`
 
 ### Features
-* Customizable time format and locale: any format and locale supported by [`moment.js`](http://momentjs.com/) is supported by `atom-clock` as well!
+* Customizable time format and locale: any format and locale supported by
+[`moment.js`](http://momentjs.com/) is supported by `atom-clock` as well!
 * i18n: specify any locale to get the date in your language.
+* Easy access to time: right-click on the tile in the status bar to copy the
+time to your clipboard.
 * UTC time: show the UTC time instead of the local time.
 * Multi-platform package: the clock works with Linux, Windows and macOS.
 
 ### Settings
 
 ##### Time format
-It specifies the format to use when displaying the time. The package uses `moment.js` to format the time, so please refer to the related [`moment.js` documentation](http://momentjs.com/docs/#/displaying/format/). The default value for the time format is `H:mm`.
+It specifies the format to use when displaying the time. The package uses
+`moment.js` to format the time, so please refer to the related
+[`moment.js` documentation](http://momentjs.com/docs/#/displaying/format/). The
+default value for the time format is `H:mm`.
 
 ##### Locale
-It specifies the locale the clock will use when displaying the time. Its default value is `en`. Please check the [`moment.js` locale folder](https://github.com/moment/moment/tree/master/locale) for a complete list of all supported locales.
+It specifies the locale the clock will use when displaying the time. Its default
+value is `en`. Please check the
+[`moment.js` locale folder](https://github.com/moment/moment/tree/master/locale)
+for a complete list of all supported locales.
 
 ##### Clock interval
-It specifies how many seconds should run between two time updates, and it is defaulted to 60 (one update per minute).
+It specifies how many seconds should run between two time updates, and it is
+defaulted to 60 (one update per minute).
 
 ##### Tooltip
-If enabled, a tooltip will be shown when you hover over the time in the status bar to display the time in an alternate format. By default the tooltip is disabled, and the format is `LLLL`.
+If enabled, a tooltip will be shown when you hover over the time in the status
+bar to display the time in an alternate format. By default the tooltip is
+disabled, and the format is `LLLL`.
 
 ##### UTC
-If enabled, both the status bar clock and the tooltip clock (if enabled) will display UTC time instead of local time.
+If enabled, both the status bar clock and the tooltip clock (if enabled) will
+display UTC time instead of local time.
 
 ##### Show icon
-If ticked, a clock icon will be shown to the left of the time. It is unticked by default.
+If ticked, a clock icon will be shown to the left of the time. It is unticked by
+default.
 
 ##### Full-screen only
 If ticked, the clock will only be visible when in full-screen.
+
+##### Right-click to clipboard
+If ticked, you can right-click on the time in the status bar to copy the current
+time to your clipboard. When copying the time, the tooltip format is used.
 
 ### Some examples
 
@@ -56,7 +74,11 @@ If ticked, the clock will only be visible when in full-screen.
 |`[Quarter] Q, MMMM Do YYYY, ddd, h:mm a`|space waster format|![useless](https://user-images.githubusercontent.com/472900/32742583-cca6f9c6-c8a1-11e7-90b7-4c6ba9ea6480.png)|
 
 ### Locales
-When a different locale is specified in the settings, the date language will change accordingly. A locale can be defined with its substring, and `moment.js` will take care of selecting the first locale it knows. A substring can be specified in many ways. As example, the Chinese locale for China can be expressed as `zh-cn`, `zh_cn`, `zh-CN` or `zh_CN`.
+When a different locale is specified in the settings, the date language will
+change accordingly. A locale can be defined with its substring, and `moment.js`
+will take care of selecting the first locale it knows. A substring can be
+specified in many ways. As example, the Chinese locale for China can be
+expressed as `zh-cn`, `zh_cn`, `zh-CN` or `zh_CN`.
 
 Here are some examples for locales different from English.
 
@@ -147,11 +169,11 @@ affect both the status bar content and the tooltip content.
 ![UTC Tooltip](https://user-images.githubusercontent.com/472900/32742862-90b47000-c8a2-11e7-8be4-a4464e00d1e1.gif)
 
 ### Contributing
-**Like what you see?** Please, feel free to fork this repository, and make any change you like. If you
-want to propose a nice feature, please create a separate branch on your fork,
-named after the feature you want to implement, then make a pull request from that
-branch. Also, before actually getting to work, just consider I'm trying to keep
-this package as simple and minimal as possible!
+**Like what you see?** Please, feel free to fork this repository, and make any
+change you like. If you want to propose a nice feature, please create a separate
+branch on your fork, named after the feature you want to implement, then make a
+pull request from that branch. Also, before actually getting to work, just
+consider I'm trying to keep this package as simple and minimal as possible!
 
 ### Hall of fame
 A special **THANK YOU** to all the contributors of the project!

@@ -1,3 +1,7 @@
+## 0.1.18
+* Copy-to-clipboard option added, so that you can copy the current time to your
+clipboard by right-clicking on the time tile in the status bar.
+
 ## 0.1.17
 * Full-screen only option added (see [pull request](https://github.com/b3by/atom-clock/pull/64))
 * :memo: Full-screen option added to the README file

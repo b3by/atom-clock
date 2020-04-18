@@ -32,6 +32,7 @@ describe('Atom Clock', () => {
     expect(AtomClock.config.showUTC.default).toBe(false)
     expect(AtomClock.config.refreshInterval.default).toBe(60)
     expect(AtomClock.config.showClockIcon.default).toBe(false)
+    expect(AtomClock.config.rightClickToClipboard.default).toBe(true)
   })
 
   it('should refresh the ticker when the date format is changed', () => {
